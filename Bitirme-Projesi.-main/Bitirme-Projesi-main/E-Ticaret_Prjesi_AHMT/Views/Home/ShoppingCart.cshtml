@@ -1,0 +1,20 @@
+﻿@model List<Product> 
+@ViewBag.UserId
+@{
+    ViewData["Title"] = "ShoppingCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Header Start -->
+     @await Component.InvokeAsync("SelectShoppingCardPageViewComponentPartial")
+<!-- Page Header End -->
+
+<!-- Cart Start -->
+    @await Component.InvokeAsync("SelectShoppingCartViewComponentPartial")
+ <!-- Cart End -->
+
+
+
+
+
+

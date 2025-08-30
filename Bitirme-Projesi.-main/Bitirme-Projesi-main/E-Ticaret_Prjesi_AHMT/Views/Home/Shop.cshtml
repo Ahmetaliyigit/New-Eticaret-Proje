@@ -1,0 +1,31 @@
+﻿@model List<Product> 
+@{
+    ViewData["Title"] = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Category Start -->
+    @await Component.InvokeAsync("SelectCategoryBoxViewComponentPartial")
+<!-- Category End -->
+
+<!-- Page Header Start -->
+    @await Component.InvokeAsync("OurShopBoxViewComponentPartial") 
+<!-- Page Header End --> 
+
+<!-- Shop Start -->
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5">
+
+        <!-- Shop Sidebar Start -->
+             @await Component.InvokeAsync("SeiectSideBarViewComponentPartial") 
+        <!-- Shop Sidebar End -->
+
+        <!-- Shop Product Start -->
+            @await Component.InvokeAsync("SelectProductViewComponentPartial", new { Id = ViewBag.Id })      
+        <!-- Shop Product End -->
+
+    </div>
+</div>
+<!-- Shop End -->
+
+

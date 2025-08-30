@@ -1,0 +1,44 @@
+﻿@model RegisterViewModel
+
+<div id="register-page" class="auth-container" style="display: none;">
+    <div class="auth-box">
+        <h2 class="auth-title">Kayıt Ol</h2>
+
+
+        <form asp-action="Register" asp-controller="Account" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label for="register-name">Ad Soyad</label>
+                <input class="form-control" asp-for="NameSurname" placeholder="Ad ve soyadınızı giriniz" />
+                <span asp-validation-for="NameSurname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="register-email">E-posta</label>
+                <input class="form-control" asp-for="Email" placeholder="E-posta adresinizi giriniz" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="register-password">Şifre</label>
+                <input class="form-control" asp-for="Password" type="password" placeholder="Şifrenizi giriniz" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="register-confirm">Şifreyi Onayla</label>
+                <input class="form-control" asp-for="RePassword" type="password" placeholder="Şifrenizi tekrar giriniz" />
+                <span asp-validation-for="RePassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn">Kayıt Ol</button>
+
+        </form>
+
+
+        <div class="auth-footer">
+            <p>Zaten hesabınız var mı? <a href="#" onclick="showLogin()">Giriş Yap</a></p>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "ContactUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Page Header Start -->
+     @await Component.InvokeAsync("SelectContactPageViewComponentPartial");
+<!-- Page Header End -->
+
+<!-- Contact Start -->
+    @await Component.InvokeAsync("SelectContactViewComponentPartial");
+<!-- Contact End -->
+

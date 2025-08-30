@@ -1,0 +1,17 @@
+﻿@model Product
+@ViewBag.CartId2
+
+@{
+    ViewData["Title"] = "ShopDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Header Start -->
+    @await Component.InvokeAsync("SelectHeaderViewComponentResult")
+<!-- Page Header End -->
+
+<!-- Shop Detail Start -->
+    @await Component.InvokeAsync("SelectDetailColorSize", new { Id = Model.Id })
+<!-- Shop Detail End -->
+
+

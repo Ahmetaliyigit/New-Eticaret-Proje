@@ -1,0 +1,62 @@
+﻿    <Project Sdk="Microsoft.NET.Sdk.Web">
+
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>E_Ticaret_Prjesi_AHMT</RootNamespace>
+      </PropertyGroup>
+
+      <ItemGroup>
+        <Compile Remove="wwwroot\images\**" />
+        <Content Remove="wwwroot\images\**" />
+        <EmbeddedResource Remove="wwwroot\images\**" />
+        <None Remove="wwwroot\images\**" />
+      </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\Entity\Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\jquery-validation-unobtrusive\" />
+    <Folder Include="wwwroot\lib\jquery-validation\" />
+    <Folder Include="wwwroot\lib\jquery-validation\dist\" />
+    <Folder Include="wwwroot\lib\jquery\" />
+    <Folder Include="wwwroot\lib\jquery\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\codeql\codeql-config.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\dependabot.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\FUNDING.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3.1-x.md" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v4-x.md" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\workflows\bundlewatch.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\workflows\codeql.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\workflows\docs.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\workflows\lint.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\workflows\node-sass.yml" />
+    <None Include="wwwroot\AdminLTE-4.0.0-rc3\.github\workflows\release.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="bootstrap" Version="5.3.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.17">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+</Project>

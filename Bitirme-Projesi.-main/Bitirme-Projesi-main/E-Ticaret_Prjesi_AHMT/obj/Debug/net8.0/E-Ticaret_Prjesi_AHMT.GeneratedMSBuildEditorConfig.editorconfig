@@ -1,0 +1,277 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = E_Ticaret_Prjesi_AHMT
+build_property.RootNamespace = E_Ticaret_Prjesi_AHMT
+build_property.ProjectDir = C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Bitirme-Projesi-main\E-Ticaret_Prjesi_AHMT\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Bitirme-Projesi-main\E-Ticaret_Prjesi_AHMT
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Colors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Colors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Colors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Colors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Colors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Countries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Countries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Countries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Countries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Countries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Genders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Genders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Genders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Genders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Genders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/LoginRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/ShopDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Home/ShoppingCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wcGluZ0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/OurShopBoxViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcT3VyU2hvcEJveFZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/Register/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVnaXN0ZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SeiectSideBarViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VpZWN0U2lkZUJhclZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectCategoryBoxViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0Q2F0ZWdvcnlCb3hWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectCheckoutPageViewComponentResult/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0Q2hlY2tvdXRQYWdlVmlld0NvbXBvbmVudFJlc3VsdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectCheckoutViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0Q2hlY2tvdXRWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectContactPageViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0Q29udGFjdFBhZ2VWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectContactViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0Q29udGFjdFZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectDetailColorSize/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0RGV0YWlsQ29sb3JTaXplXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectFeaturedViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0RmVhdHVyZWRWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectFoooterViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0Rm9vb3RlclZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectHeaderViewComponentResult/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0SGVhZGVyVmlld0NvbXBvbmVudFJlc3VsdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectLinksViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0TGlua3NWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectMenuCategoriesViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0TWVudUNhdGVnb3JpZXNWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectNewProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0TmV3UHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectOfferViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0T2ZmZXJWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectProductViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0UHJvZHVjdFZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectSendGmailViewComponentPArtial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0U2VuZEdtYWlsVmlld0NvbXBvbmVudFBBcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectShoppingCardPageViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0U2hvcHBpbmdDYXJkUGFnZVZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectShoppingCartViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0U2hvcHBpbmdDYXJ0Vmlld0NvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectSponsorsViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0U3BvbnNvcnNWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Components/SelectTop4ProductViewComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0VG9wNFByb2R1Y3RWaWV3Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EXCALIBUR/source/repos/Bitirme-Projesi.-main/Bitirme-Projesi.-main/Bitirme-Projesi-main/E-Ticaret_Prjesi_AHMT/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b3ifiys0c3

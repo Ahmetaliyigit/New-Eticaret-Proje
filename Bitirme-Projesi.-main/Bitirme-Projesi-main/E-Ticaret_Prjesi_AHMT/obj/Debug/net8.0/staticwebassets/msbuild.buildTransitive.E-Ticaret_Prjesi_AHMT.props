@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\E-Ticaret_Prjesi_AHMT.props" />
+</Project>

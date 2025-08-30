@@ -1,0 +1,38 @@
+﻿@model List<Product> 
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Links Start -->
+    @await Component.InvokeAsync("SelectLinksViewComponentPartial");
+<!-- Links End -->
+
+<!-- Featured Start -->
+    @await Component.InvokeAsync("SelectFeaturedViewComponentPartial");
+<!-- Featured End -->
+
+<!-- Categories Start -->
+    @await Component.InvokeAsync("SelectMenuCategoriesViewComponentPartial");
+<!-- Categories End -->
+
+<!-- Offer Start -->
+    @await Component.InvokeAsync("SelectOfferViewComponentPartial"); 
+<!-- Offer End -->
+
+<!-- Products Start -->
+    @await Component.InvokeAsync("SelectTop4ProductViewComponentPartial")
+<!-- Products End -->
+
+<!-- Subscribe Start -->
+    @await Component.InvokeAsync("SelectSendGmailViewComponentPArtial");
+<!-- Subscribe End -->
+
+<!-- Products Start -->
+    @await Component.InvokeAsync("SelectNewProduct")
+<!-- Products End -->
+
+<!-- Vendor Start -->
+    @await Component.InvokeAsync("SelectSponsorsViewComponentPartial");   
+<!-- Vendor End -->
+

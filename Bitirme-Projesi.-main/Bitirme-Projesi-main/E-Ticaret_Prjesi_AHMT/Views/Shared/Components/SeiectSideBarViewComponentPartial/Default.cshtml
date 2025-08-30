@@ -1,0 +1,116 @@
+﻿@model ProductandColor
+
+<div class="col-lg-3 col-md-12">
+    <!-- Price Start -->
+    <div class="border-bottom mb-4 pb-4">
+        <h5 class="font-weight-semi-bold mb-4">Filter by price</h5>
+        <form>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="price-all" name="price" class="custom-control-input" checked>
+                <label class="custom-control-label" for="price-all">All Price</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count()</span>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="price-1" name="price" class="custom-control-input" onclick="window.location.href='/Home/Shop/999'">
+                <label class="custom-control-label" for="price-1">$0 - $100</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Price > 0 && i.Price < 100)</span>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="price-2" name="price" class="custom-control-input" onclick="window.location.href='/Home/Shop/998'">
+                <label class="custom-control-label" for="price-2">$100 - $200</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Price > 100 && i.Price < 200)</span>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="price-3" name="price" class="custom-control-input" onclick="window.location.href='/Home/Shop/997'">
+                <label class="custom-control-label" for="price-3">$200 - $300</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Price > 200 && i.Price < 300)</span>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="price-4" name="price" class="custom-control-input" onclick="window.location.href='/Home/Shop/996'">
+                <label class="custom-control-label" for="price-4">$300 - $400</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Price > 300 && i.Price < 400)</span>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="price-5" name="price" class="custom-control-input" onclick="window.location.href='/Home/Shop/995'">
+                <label class="custom-control-label" for="price-5">$400 - $500</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Price > 400 && i.Price < 500)</span>
+            </div>
+        </form>
+    </div>
+    <!-- Price End -->
+
+    <!-- Color Start -->
+    <div class="border-bottom mb-4 pb-4">
+        <h5 class="font-weight-semi-bold mb-4">Filter by color</h5>
+        <form>
+        @foreach(var item in Model.Colors)
+        {
+                var target = item.Id + 1000000;
+                var inputId = "color-" + item.Id;
+                <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input type="checkbox" class="custom-control-input" id="@inputId"
+                           onclick="window.location.href='/Home/Shop/@(target)';" />
+                    <label class="custom-control-label" for="@inputId">@item.ColorName</label>
+                    <span class="badge border font-weight-normal">@Model.Products.Count(i => i.ColorId == item.Id)</span>
+                </div>  
+        }
+   
+        </form>
+    </div> <!-- 1000000 -->
+    <!-- Color End -->
+
+    <!-- Size Start -->
+    <div class="mb-5">
+        <h5 class="font-weight-semi-bold mb-4">Filter by size</h5>
+        <form>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" checked="" id="size-all" onclick="window.location.href='/Home/Shop/0'">
+                <label class="custom-control-label" for="size-all">All Size</label>
+                <span class="badge border font-weight-normal">1000</span>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="size-1" onclick="window.location.href='/Home/Shop/2323'">
+                <label class="custom-control-label" for="size-1">XS</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Size == "XS")</span>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="size-2" onclick="window.location.href='/Home/Shop/3434'">
+                <label class="custom-control-label" for="size-2">S</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Size == "S")</span>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="size-3" onclick="window.location.href='/Home/Shop/4545'">
+                <label class="custom-control-label" for="size-3">M</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Size == "M")</span>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="size-4" onclick="window.location.href='/Home/Shop/5656'">
+                <label class="custom-control-label" for="size-4">L</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Size == "L")</span>
+            </div>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                <input type="checkbox" class="custom-control-input" id="size-5" onclick="window.location.href='/Home/Shop/6767'">
+                <label class="custom-control-label" for="size-5">XL</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count(i => i.Size == "XL")</span>
+            </div>
+        </form>
+    </div>
+    <!-- Size End -->
+
+    <!-- Gender Start -->
+    <div class="mb-6">
+        <h5 class="font-weight-semi-bold mb-4">Filter by Gender</h5>
+        <form>
+            @foreach(var item in Model.Genders)
+            {
+                   <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="Gender-2" onclick="window.location.href='/Home/Shop/@item.Id+10000'">
+                <label class="custom-control-label" for="Gender-2">@item.GenderName"</label>
+                <span class="badge border font-weight-normal">@(Model.Products.Count(i => i.GenderId == item.Id))</span>
+                  </div>
+            }
+     
+        </form>
+    </div>
+    <!-- Gender End -->
+</div>  
