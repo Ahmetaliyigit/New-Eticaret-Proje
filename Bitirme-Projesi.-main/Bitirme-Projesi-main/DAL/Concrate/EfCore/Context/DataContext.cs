@@ -1,6 +1,7 @@
 ﻿using Entity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,19 @@ namespace DAL.Concrate.EfCore.Context
         public DbSet<Product> Products { get; set; }
 
 
+
+    }
+
+
+    public class DataContextFactory : IDesignTimeDbContextFactory<DataContext>
+    {
+        public DataContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
+            optionsBuilder.UseSqlServer("Server=AHMETALI\\SQLEXPRESS; Database=E-Ticaret_Projesi_AHMT; Trusted_Connection=True; TrustServerCertificate=True;");
+
+            return new DataContext(optionsBuilder.Options);
+        }
 
     }
 }

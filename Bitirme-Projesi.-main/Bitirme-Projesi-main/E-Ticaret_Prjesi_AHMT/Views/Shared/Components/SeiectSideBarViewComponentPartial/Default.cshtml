@@ -103,12 +103,18 @@
         <form>
             @foreach(var item in Model.Genders)
             {
-                   <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                <input type="checkbox" class="custom-control-input" id="Gender-2" onclick="window.location.href='/Home/Shop/@item.Id+10000'">
-                <label class="custom-control-label" for="Gender-2">@item.GenderName"</label>
-                <span class="badge border font-weight-normal">@(Model.Products.Count(i => i.GenderId == item.Id))</span>
-                  </div>
+               
+
+                    var target = item.Id + 10000;
+                var input = "gender-" + item.Id;
+                  <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                    <input type="checkbox" class="custom-control-input" id="@input"
+                           onclick="window.location.href='/Home/Shop/@(target)';" />
+                    <label class="custom-control-label" for="@input">@item.GenderName</label>
+                    <span class="badge border font-weight-normal">@Model.Products.Count(i => i.GenderId == item.Id)</span>
+                </div>  
             }
+
      
         </form>
     </div>

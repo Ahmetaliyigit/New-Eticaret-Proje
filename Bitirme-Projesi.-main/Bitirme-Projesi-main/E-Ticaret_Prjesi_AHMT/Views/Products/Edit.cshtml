@@ -41,7 +41,7 @@
             <div class="form-group mb-3">
                 <label>Current Image</label><br />
                 @if (!string.IsNullOrEmpty(Model.Url))
-                {
+                    {
                     <img src="@Url.Content(Model.Url)" alt="Product Image" width="150" class="mb-2" />
                 }
                 <label for="Photo">Change Image</label>
