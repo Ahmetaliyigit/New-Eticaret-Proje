@@ -43,6 +43,11 @@
     <div class="border-bottom mb-4 pb-4">
         <h5 class="font-weight-semi-bold mb-4">Filter by color</h5>
         <form>
+            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" checked="" id="Color-all" onclick="window.location.href='/Home/Shop/0'">
+                <label class="custom-control-label" for="size-all">All Color</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count()</span>
+            </div>
         @foreach(var item in Model.Colors)
         {
                 var target = item.Id + 1000000;
@@ -66,7 +71,7 @@
             <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                 <input type="checkbox" class="custom-control-input" checked="" id="size-all" onclick="window.location.href='/Home/Shop/0'">
                 <label class="custom-control-label" for="size-all">All Size</label>
-                <span class="badge border font-weight-normal">1000</span>
+                <span class="badge border font-weight-normal">@Model.Products.Count()</span>
             </div>
             <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                 <input type="checkbox" class="custom-control-input" id="size-1" onclick="window.location.href='/Home/Shop/2323'">
@@ -101,10 +106,13 @@
     <div class="mb-6">
         <h5 class="font-weight-semi-bold mb-4">Filter by Gender</h5>
         <form>
+              <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" checked="" id="Gender-all" onclick="window.location.href='/Home/Shop/0'">
+                <label class="custom-control-label" for="size-all">All Gender</label>
+                <span class="badge border font-weight-normal">@Model.Products.Count()</span>
+            </div>
             @foreach(var item in Model.Genders)
             {
-               
-
                     var target = item.Id + 10000;
                 var input = "gender-" + item.Id;
                   <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
@@ -113,9 +121,7 @@
                     <label class="custom-control-label" for="@input">@item.GenderName</label>
                     <span class="badge border font-weight-normal">@Model.Products.Count(i => i.GenderId == item.Id)</span>
                 </div>  
-            }
-
-     
+            }     
         </form>
     </div>
     <!-- Gender End -->

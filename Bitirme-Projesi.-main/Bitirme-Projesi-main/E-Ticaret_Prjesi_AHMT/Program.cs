@@ -12,6 +12,9 @@ namespace E_Ticaret_Prjesi_AHMT
 {
     public class Program
     {
+     public static ApplicationUser OnlineUser;
+        
+
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -28,14 +31,16 @@ namespace E_Ticaret_Prjesi_AHMT
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().
                 AddEntityFrameworkStores<DataContext>()
                 .AddDefaultTokenProviders();
-                
 
+
+            builder.Services.AddScoped<ICartDAL, CartDAL>();
             builder.Services.AddScoped<ICategoryDAL,CategoryDAL>();
             builder.Services.AddScoped<IColorDAL,ColorDAL>();
             builder.Services.AddScoped<IProductDAL,ProductDAL>();
             builder.Services.AddScoped<IGenderDAL,GenderDAL>();
             builder.Services.AddScoped<ICountryDAL,CountryDAL> ();
 
+            builder.Services.AddScoped<ICartService, CartService>();
             builder.Services.AddScoped<ICategoryService,CategoryService>();
             builder.Services.AddScoped<IColorService,ColorService>();
             builder.Services.AddScoped<IGenderService,GenderService>();

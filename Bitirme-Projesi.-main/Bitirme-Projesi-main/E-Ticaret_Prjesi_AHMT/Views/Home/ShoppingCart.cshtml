@@ -10,7 +10,7 @@
 <!-- Page Header End -->
 
 <!-- Cart Start -->
-    @await Component.InvokeAsync("SelectShoppingCartViewComponentPartial")
+    @await Component.InvokeAsync("SelectShoppingCartViewComponentPartial", new {Id = ViewBag.Id})
  <!-- Cart End -->
 
 

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using E_Ticaret_Prjesi_AHMT
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -102,7 +103,14 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="/Home/ShoppingCart" class="dropdown-item">Shopping Cart</a>
+                                    @if (Program.OnlineUser != null)
+                                    {
+                                        <a href="/Home/ShoppingCart" class="dropdown-item">Shopping Cart</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="/Home/LoginRegister" class="dropdown-item">Shopping Cart</a>
+                                    }
                                     <a href="/Home/Checkout" class="dropdown-item">Checkout</a>
                                 </div>
                             </div>

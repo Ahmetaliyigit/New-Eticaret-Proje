@@ -9,15 +9,15 @@ Shop
 Shop Detail
 
 - ???? Alacaðýmýz ürünün sayýsýný verdikten sonra Add to Cart a basýnca o sayý ürünün stoðundan düþsün ve eðer stokta o kadar ürün yoksa uyarý versin
-- ???? Add to Cart butonu çalýþsýn (Basýnca o ürünü kullanýcýnýn Sepetine eklesin (Cart)) 
 - ???? Kullanýcý o ürüne yorum yapabilsin  
 - Review kýsmý Information kýsmýyla birleþen hata kalksýn 
 - Description kalksýn (zaten üstte var)
 
 Shopping Cart 
 
-- ???? Sadece kullanýcýnýn sepetindeki ürünler gelsin 
 - ???? Proceed To Checkout butonuna basýnca ürünler silinsin 
+- ???? Remove butonuna basýnca ürünler silinsin 
+- ???? Cuppon kaldýrýlýsn
 
 Contact 
 

@@ -12,7 +12,7 @@ namespace Entity
         public string  CategoryName { get; set; }
         public string Url { get; set; }
 
-        public List<Product> Products { get; set; } = new List<Product>();
+        public List<Product> Products { get; set; } =   new List<Product>();
 
     }
 }

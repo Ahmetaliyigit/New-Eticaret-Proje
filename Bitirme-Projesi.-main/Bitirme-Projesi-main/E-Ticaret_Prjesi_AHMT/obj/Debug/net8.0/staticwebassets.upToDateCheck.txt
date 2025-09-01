@@ -297,6 +297,8 @@ wwwroot\img\20250831124249764.jpg
 wwwroot\img\20250831124321256.jpg
 wwwroot\img\20250831124346559.jpg
 wwwroot\img\20250831124500160.jpg
+wwwroot\img\20250831202437645.jpg
+wwwroot\img\20250831202509932.jpg
 wwwroot\img\ACategorySleepwear.jpg
 wwwroot\img\AccerssoriesCategory.jpg
 wwwroot\img\AJeanCategory.jpg

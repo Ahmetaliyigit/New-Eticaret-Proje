@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5jO9BBz+V3fyebVtDXSAvZ7T766KfUSkUNUHJwnpxdY=",
+  "Hash": "RcqX8cgBFVgfP2C1aMoJ3cVKg88Wx6JW5f2wZ0r377g=",
   "Source": "E-Ticaret_Prjesi_AHMT",
   "BasePath": "_content/E-Ticaret_Prjesi_AHMT",
   "Mode": "Default",
@@ -7596,6 +7596,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\20250831124500160.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\20250831202437645.jpg",
+      "SourceId": "E-Ticaret_Prjesi_AHMT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\",
+      "BasePath": "_content/E-Ticaret_Prjesi_AHMT",
+      "RelativePath": "img/20250831202437645#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z1ffsj6fgz",
+      "Integrity": "9+HensVNXwRzS6od0iJuatYjsWjV/nKMTYz7vkl3oWE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\20250831202437645.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\20250831202509932.jpg",
+      "SourceId": "E-Ticaret_Prjesi_AHMT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\",
+      "BasePath": "_content/E-Ticaret_Prjesi_AHMT",
+      "RelativePath": "img/20250831202509932#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y2yon4rlwc",
+      "Integrity": "dkb0tSNN7DSyGSlJfE6OcRH2znzAoSQev326d/l8Rgo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\20250831202509932.jpg"
     },
     {
       "Identity": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\ACategorySleepwear.jpg",
@@ -25118,7 +25160,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Aug 2025 10:37:28 GMT"
+          "Value": "Mon, 01 Sep 2025 11:09:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25155,7 +25197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Aug 2025 10:37:28 GMT"
+          "Value": "Mon, 01 Sep 2025 11:09:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25200,7 +25242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Aug 2025 10:37:28 GMT"
+          "Value": "Mon, 01 Sep 2025 11:09:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25245,7 +25287,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 31 Aug 2025 10:37:28 GMT"
+          "Value": "Mon, 01 Sep 2025 11:09:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -38218,6 +38260,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-lkvvfojf8j1Zw9GfvyKMY9U5BvOS8Tp/1o2jxPLVKvI="
+        }
+      ]
+    },
+    {
+      "Route": "img/20250831202437645.jpg",
+      "AssetFile": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\20250831202437645.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9+HensVNXwRzS6od0iJuatYjsWjV/nKMTYz7vkl3oWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 Aug 2025 17:24:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9+HensVNXwRzS6od0iJuatYjsWjV/nKMTYz7vkl3oWE="
+        }
+      ]
+    },
+    {
+      "Route": "img/20250831202437645.z1ffsj6fgz.jpg",
+      "AssetFile": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\20250831202437645.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9+HensVNXwRzS6od0iJuatYjsWjV/nKMTYz7vkl3oWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 Aug 2025 17:24:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z1ffsj6fgz"
+        },
+        {
+          "Name": "label",
+          "Value": "img/20250831202437645.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9+HensVNXwRzS6od0iJuatYjsWjV/nKMTYz7vkl3oWE="
+        }
+      ]
+    },
+    {
+      "Route": "img/20250831202509932.jpg",
+      "AssetFile": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\20250831202509932.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1293131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dkb0tSNN7DSyGSlJfE6OcRH2znzAoSQev326d/l8Rgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 Aug 2025 17:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dkb0tSNN7DSyGSlJfE6OcRH2znzAoSQev326d/l8Rgo="
+        }
+      ]
+    },
+    {
+      "Route": "img/20250831202509932.y2yon4rlwc.jpg",
+      "AssetFile": "C:\\Users\\EXCALIBUR\\source\\repos\\Bitirme-Projesi.-main\\Bitirme-Projesi.-main\\Bitirme-Projesi-main\\E-Ticaret_Prjesi_AHMT\\wwwroot\\img\\20250831202509932.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1293131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dkb0tSNN7DSyGSlJfE6OcRH2znzAoSQev326d/l8Rgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 31 Aug 2025 17:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2yon4rlwc"
+        },
+        {
+          "Name": "label",
+          "Value": "img/20250831202509932.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dkb0tSNN7DSyGSlJfE6OcRH2znzAoSQev326d/l8Rgo="
         }
       ]
     },

@@ -18,7 +18,7 @@ namespace Entity
         // For Cart
 
 
-        public Cart Carts { get; set; }
+        public Cart Cart { get; set; }
 
     }
 }

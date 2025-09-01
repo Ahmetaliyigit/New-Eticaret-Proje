@@ -230,54 +230,12 @@
   
 
     <!-- LOGIN SAYFASI -->
-    <div id="login-page" class="auth-container">
-        <div class="auth-box">
-            <h2 class="auth-title">Giriş Yap</h2>
-            <form id="login-form">
-                <div class="form-group">
-                    <label for="login-email">E-posta</label>
-                    <input type="email" id="login-email" placeholder="E-posta adresinizi giriniz" required="">
-                </div>
-                <div class="form-group">
-                    <label for="login-password">Şifre</label>
-                    <input type="password" id="login-password" placeholder="Şifrenizi giriniz" required="">
-                </div>
-                <button type="submit" class="btn">Giriş Yap</button>
-            </form>
-            <div class="auth-footer">
-                <p>Hesabınız yok mu? <a href="#" onclick="showRegister()">Kayıt Ol</a></p>
-            </div>
-        </div>
-    </div>
+        
+        @await Component.InvokeAsync("Login")
 
     <!-- REGISTER SAYFASI (BAŞLANGIÇTA GİZLİ) -->
-    <div id="register-page" class="auth-container" style="display: none;">
-        <div class="auth-box">
-            <h2 class="auth-title">Kayıt Ol</h2>
-            <form id="register-form">
-                <div class="form-group">
-                    <label for="register-name">Ad Soyad</label>
-                    <input type="text" id="register-name" placeholder="Ad ve soyadınızı giriniz" required="">
-                </div>
-                <div class="form-group">
-                    <label for="register-email">E-posta</label>
-                    <input type="email" id="register-email" placeholder="E-posta adresinizi giriniz" required="">
-                </div>
-                <div class="form-group">
-                    <label for="register-password">Şifre</label>
-                    <input type="password" id="register-password" placeholder="Şifrenizi giriniz" required="">
-                </div>
-                <div class="form-group">
-                    <label for="register-confirm">Şifreyi Onayla</label>
-                    <input type="password" id="register-confirm" placeholder="Şifrenizi tekrar giriniz" required="">
-                </div>
-                <button type="submit" class="btn">Kayıt Ol</button>
-            </form>
-            <div class="auth-footer">
-                <p>Zaten hesabınız var mı? <a href="#" onclick="showLogin()">Giriş Yap</a></p>
-            </div>
-        </div>
-    </div>
+
+        @await Component.InvokeAsync("Register")
     
 
     <script>

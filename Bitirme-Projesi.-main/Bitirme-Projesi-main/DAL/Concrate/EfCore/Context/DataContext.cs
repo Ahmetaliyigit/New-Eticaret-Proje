@@ -28,9 +28,15 @@ namespace DAL.Concrate.EfCore.Context
 
             // ApplicationUser ve Cart arasında 1-1 ilişki
             modelBuilder.Entity<ApplicationUser>()
-                .HasOne(u => u.Carts)       // User -> Cart
-                .WithOne(c => c.User)       // Cart -> User
-                .HasForeignKey<Cart>(c => c.UserId); // Foreign key Cart tablosunda
+                .HasOne(u => u.Cart)
+                .WithOne(c => c.User)
+                .HasForeignKey<Cart>(c => c.UserId);
+
+            // Cart ve Product arasında many-to-many ilişki
+            modelBuilder.Entity<Cart>()
+                .HasMany(c => c.Products)
+                .WithMany(p => p.Carts)
+                .UsingEntity(j => j.ToTable("CartProducts")); // Join tablosu ismi
         }
 
         public DbSet<Category> Categories { get; set; }
@@ -38,11 +44,13 @@ namespace DAL.Concrate.EfCore.Context
         public DbSet<Country> Countries { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Cart> Carts { get; set; }
 
 
 
     }
 
+    // Add-migration / Update-Database işlemleri için kullandığım yapı
 
     public class DataContextFactory : IDesignTimeDbContextFactory<DataContext>
     {

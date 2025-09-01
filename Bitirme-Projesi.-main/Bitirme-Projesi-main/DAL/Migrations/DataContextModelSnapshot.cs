@@ -34,7 +34,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("ProductsId");
 
-                    b.ToTable("CartProduct");
+                    b.ToTable("CartProducts", (string)null);
                 });
 
             modelBuilder.Entity("Entity.ApplicationUser", b =>
@@ -124,7 +124,7 @@ namespace DAL.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("Cart");
+                    b.ToTable("Carts");
                 });
 
             modelBuilder.Entity("Entity.Category", b =>
@@ -400,7 +400,7 @@ namespace DAL.Migrations
             modelBuilder.Entity("Entity.Cart", b =>
                 {
                     b.HasOne("Entity.ApplicationUser", "User")
-                        .WithOne("Carts")
+                        .WithOne("Cart")
                         .HasForeignKey("Entity.Cart", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -488,7 +488,7 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("Entity.ApplicationUser", b =>
                 {
-                    b.Navigation("Carts")
+                    b.Navigation("Cart")
                         .IsRequired();
                 });
 

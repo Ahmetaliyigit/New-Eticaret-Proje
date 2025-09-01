@@ -10,11 +10,10 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
 {
     public class HomeController : Controller
     {
-
-        public int UserId2{ get; set; } = 25;
-
         private readonly IProductService productservise;
-        
+
+
+       
 
         public HomeController(IProductService product)
         {
@@ -39,8 +38,9 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
             return View(detail.FirstOrDefault());
         }
 
-        public async Task<IActionResult> ShoppingCart()
+        public async Task<IActionResult> ShoppingCart(int id)
         {
+            ViewBag.Id = id;
             ViewBag.Toplamtutar = 0;
             return View(await productservise.GetAllAsync());
         }
@@ -58,6 +58,12 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
         public async Task<IActionResult> LoginRegister()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LoginRegister(string loginpassword,string loginemail)
+        {
+            return Ok();
         }
     }
 }
