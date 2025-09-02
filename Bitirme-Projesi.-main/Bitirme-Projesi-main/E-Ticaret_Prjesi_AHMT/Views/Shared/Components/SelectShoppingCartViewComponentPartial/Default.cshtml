@@ -1,4 +1,5 @@
-﻿@model List<Product>
+﻿@using E_Ticaret_Prjesi_AHMT
+@model Cart
 
 <div class="container-fluid pt-5">
     <div class="row px-xl-5">
@@ -14,18 +15,18 @@
                     </tr>
                 </thead>
                 <tbody class="align-middle">
-                    @foreach (var item in Model)
+                    @foreach (var item in Model.CartProducts)
                     {
-                        ViewBag.ToplamTutar = ViewBag.ToplamTutar + item.Price;
+                        ViewBag.ToplamTutar = ViewBag.ToplamTutar + item.Product.Price * @item.ProductCount;
                         <tr>
-                            <td class="align-middle"><img src="~/img/@item.Url" alt="" style="width: 50px;">@item.Name</td>
-                            <td class="align-middle">@item.Price$</td>
+                            <td class="align-middle"><img src="~/img/@item.Product.Url" alt="" style="width: 50px;">@item.Product.Name</td>
+                            <td class="align-middle">@item.Product.Price</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">             
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="@item.ProductCount">
                                 </div>
                             </td>
-                            <td class="align-middle">@item.Price$</td>
+                            <td class="align-middle">@(item.Product.Price*item.ProductCount)$</td>
                             <td class="align-middle"><button class="btn btn-sm btn-primary" onclick=""><i class="fa fa-times"></i></button></td>
                         </tr>
                     }
@@ -40,11 +41,11 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between mb-3 pt-1">
                         <h6 class="font-weight-medium">Subtotal</h6>
-                        <h6 class="font-weight-medium">$150</h6>
+                        <h6 class="font-weight-medium">@ViewBag.ToplamTutar$</h6>
                     </div>
                     <div class="d-flex justify-content-between">
                         <h6 class="font-weight-medium">Shipping</h6>
-                        <h6 class="font-weight-medium">$10</h6>
+                        <h6 class="font-weight-medium">0$</h6>
                     </div>
                 </div>
                 <div class="card-footer border-secondary bg-transparent">

@@ -26,17 +26,18 @@ namespace DAL.Concrate.EfCore.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            // ApplicationUser ve Cart arasında 1-1 ilişki
-            modelBuilder.Entity<ApplicationUser>()
-                .HasOne(u => u.Cart)
-                .WithOne(c => c.User)
-                .HasForeignKey<Cart>(c => c.UserId);
+            modelBuilder.Entity<CartProduct>()
+             .HasKey(cp => new { cp.CartId, cp.ProductId });
 
-            // Cart ve Product arasında many-to-many ilişki
-            modelBuilder.Entity<Cart>()
-                .HasMany(c => c.Products)
-                .WithMany(p => p.Carts)
-                .UsingEntity(j => j.ToTable("CartProducts")); // Join tablosu ismi
+            modelBuilder.Entity<CartProduct>()
+                .HasOne(cp => cp.Cart)
+                .WithMany(c => c.CartProducts)
+                .HasForeignKey(cp => cp.CartId);
+
+            modelBuilder.Entity<CartProduct>()
+                .HasOne(cp => cp.Product)
+                .WithMany(p => p.CartProducts)
+                .HasForeignKey(cp => cp.ProductId);
         }
 
         public DbSet<Category> Categories { get; set; }
@@ -46,6 +47,8 @@ namespace DAL.Concrate.EfCore.Context
         public DbSet<Product> Products { get; set; }
         public DbSet<Cart> Carts { get; set; }
 
+        public DbSet<CartProduct> CartProducts { get; set; }
+             
 
 
     }

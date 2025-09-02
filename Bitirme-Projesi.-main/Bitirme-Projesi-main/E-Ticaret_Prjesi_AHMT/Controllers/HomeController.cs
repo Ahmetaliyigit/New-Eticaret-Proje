@@ -38,10 +38,12 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
             return View(detail.FirstOrDefault());
         }
 
-        public async Task<IActionResult> ShoppingCart(int id)
+        [Route("Home/[action]/{id}/{Toplam?}")]
+        public async Task<IActionResult> ShoppingCart(int id,string Toplam)
         {
             ViewBag.Id = id;
             ViewBag.Toplamtutar = 0;
+            ViewBag.Toplam = Toplam;
             return View(await productservise.GetAllAsync());
         }
 

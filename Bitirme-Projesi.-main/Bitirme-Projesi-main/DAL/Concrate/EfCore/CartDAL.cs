@@ -22,7 +22,7 @@ namespace DAL.Concrate.EfCore
 
         public async Task<Cart> GetCartWithProductAsync(Expression<Func<Cart, bool>> filter = null)
         {
-            return context.Carts.Include(i => i.Products).FirstOrDefault(filter);
+            return context.Carts.Include(i => i.CartProducts).FirstOrDefault(filter);
         }
     }
 }

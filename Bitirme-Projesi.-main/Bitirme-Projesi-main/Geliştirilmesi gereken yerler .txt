@@ -8,7 +8,7 @@ Shop
 
 Shop Detail
 
-- ???? Alacaðýmýz ürünün sayýsýný verdikten sonra Add to Cart a basýnca o sayý ürünün stoðundan düþsün ve eðer stokta o kadar ürün yoksa uyarý versin
+- ???? Alacaðýmýz ürünün sayýsýný verdikten sonra  eðer stokta o kadar ürün yoksa uyarý versin
 - ???? Kullanýcý o ürüne yorum yapabilsin  
 - Review kýsmý Information kýsmýyla birleþen hata kalksýn 
 - Description kalksýn (zaten üstte var)
@@ -17,7 +17,6 @@ Shopping Cart
 
 - ???? Proceed To Checkout butonuna basýnca ürünler silinsin 
 - ???? Remove butonuna basýnca ürünler silinsin 
-- ???? Cuppon kaldýrýlýsn
 
 Contact 
 
@@ -34,68 +33,3 @@ Admin Panel
 
 
 
-
-
-? 1. Gün – Shop Detail (En kritik kýsým)
-
-???? Görevler:
-
-	Add to Cart butonu çalýþsýn
-	
-	Týklanýnca ürünü kullanýcýnýn sepetine ekle (Session veya DB).
-	
-	Alacaðýmýz ürün sayýsý stoðu etkilesin
-	
-	Sepete eklemeden önce stok kontrolü (if stok >= miktar else hata).
-	
-	Sepete eklenirse stok azalt (UPDATE products SET stock = stock - miktar).
-	
-	Stok yetersizse uyarý ver.
-	
-	Review kýsmýndaki hata düzelt (Review + Information birleþmesi).
-	
-	Description kaldýr (HTML’den sil).
-
-? 2. Gün – Shopping Cart
-
-???? Görevler:
-
-	Sadece kullanýcýnýn sepetindeki ürünler gelsin (Auth ID filtre).
-	
-	Proceed To Checkout ? Ürünler silinsin (Sepet temizleme).
-
-? 3. Gün – Shop Detail (Yorum Eklenmesi)
-
-???? Görev:
-
-	Kullanýcý ürüne yorum yapabilsin:
-
-	Yorum formu (frontend).
-	
-	Backend ? reviews tablosu oluþtur, INSERT et.
-	
-	Auth kontrolü (login olmayan yorum yapamasýn).
-
-? 4. Gün – Shop Sayfasý
-
-Görevler (Yýldýzsýz ama gerekli):
-
-	Sað üstte sýralama filtresi (fiyata göre artan/azalan).
-	
-	Ürün arama.
-	
-	Filtreleme ? seçili kutu dolumu.
-
-? 5. Gün – Contact
-
-	Email gönderme (SMTP veya Mail API).
-
-? 6. Gün – Admin Panel
-
-	Fotoðraf girilmeden güncelleme hatasýný kaldýr (optional upload).
-
-? 7. Gün – Test & Optimize
-
-	Tüm sepet, stok, yorum, checkout akýþý test edilir.
-
-	Mobil uyumluluk ve hata kontrolü yapýlýr.

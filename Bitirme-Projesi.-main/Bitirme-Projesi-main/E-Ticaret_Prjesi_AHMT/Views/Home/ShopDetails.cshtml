@@ -11,7 +11,7 @@
 <!-- Page Header End -->
 
 <!-- Shop Detail Start -->
-    @await Component.InvokeAsync("SelectDetailColorSize", new { Id = Model.Id })
+    @await Component.InvokeAsync("SelectDetailColorSize", new { Id = Model.Id , Toplam = ViewBag.Toplam ?? "1"})
 <!-- Shop Detail End -->
 
 

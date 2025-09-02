@@ -17,12 +17,14 @@ namespace E_Ticaret_Prjesi_AHMT.ViewComponents
         }
 
         public async Task<IViewComponentResult> InvokeAsync(int Id)
-        {
-            var Product = await servise.GetByIdAsync(Id);
-            var Color = await color.GetByIdAsync(Product.ColorId);
-            ViewBag.Color = Color.ColorName;
-            ViewBag.IsOnline = Program.OnlineUser;
-            return View(Product);
+        {   
+            Product Product = await servise.GetByIdAsync(Id);
+            Color Color = await color.GetByIdAsync(Product.ColorId);
+            ProductandColor productandColor = new ProductandColor();
+            productandColor.Products.Add(Product);
+            productandColor.Colors.Add(Color);
+            ViewBag.IsOnline = Program.OnlineUser;  
+            return View(productandColor);
         }
     }
 }

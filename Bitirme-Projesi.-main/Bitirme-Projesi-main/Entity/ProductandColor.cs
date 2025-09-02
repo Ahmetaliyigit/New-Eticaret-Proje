@@ -8,9 +8,9 @@ namespace Entity
 {
     public class ProductandColor
     {
-        public List<Product> Products { get; set; }
-        public List<Color> Colors { get; set; }
+        public List<Product> Products { get; set; } = new List<Product>();
+        public List<Color> Colors { get; set; } = new List<Color>();
 
-        public List<Gender> Genders { get; set; }
+        public List<Gender> Genders { get; set; } = new List<Gender>();
     }
 }

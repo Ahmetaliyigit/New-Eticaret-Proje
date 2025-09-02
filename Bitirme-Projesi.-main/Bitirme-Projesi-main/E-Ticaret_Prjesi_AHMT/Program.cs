@@ -12,8 +12,10 @@ namespace E_Ticaret_Prjesi_AHMT
 {
     public class Program
     {
-     public static ApplicationUser OnlineUser;
-        
+
+        public static ApplicationUser OnlineUser;
+
+
 
         public static void Main(string[] args)
         {

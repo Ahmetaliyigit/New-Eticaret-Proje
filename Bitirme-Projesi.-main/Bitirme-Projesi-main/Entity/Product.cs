@@ -32,7 +32,7 @@ namespace Entity
 
         // For Cart
 
-        public List<Cart>? Carts { get; set; } = new List<Cart>();
+        public List<CartProduct> CartProducts { get; set; } = new List<CartProduct>();
 
     }
 }

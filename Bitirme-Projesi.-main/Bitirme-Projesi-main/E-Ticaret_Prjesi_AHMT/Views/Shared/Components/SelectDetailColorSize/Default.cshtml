@@ -1,4 +1,8 @@
-﻿@model Product
+﻿@using E_Ticaret_Prjesi_AHMT
+@model ProductandColor
+@{
+    int Toplam = 0;
+}
 
 
 <div class="container-fluid py-5">
@@ -7,14 +11,14 @@
             <div id="product-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner border">
                     <div class="carousel-item active">
-                        <img class="w-100 h-100" src="~/img/@Model.Url" alt="Image">
+                        <img class="w-100 h-100" src="~/img/@Model.Products.FirstOrDefault().Url" alt="Image">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-7 pb-5">
-            <h3 class="font-weight-semi-bold">@Model.Name</h3>
+            <h3 class="font-weight-semi-bold">@Model.Products.FirstOrDefault()?.Name</h3>
             <div class="d-flex mb-3">
                 <div class="text-primary mr-2">
                     <small class="fas fa-star"></small>
@@ -25,14 +29,14 @@
                 </div>
                 <small class="pt-1">(50 Reviews)</small>
             </div>
-            <h3 class="font-weight-semi-bold mb-4">$@Model.Price</h3>
+            <h3 class="font-weight-semi-bold mb-4">$@Model.Products.FirstOrDefault()?.Price</h3>
             <p class="mb-4">
-                @Model.Description
+                @Model.Products.FirstOrDefault()?.Description
                 <div class="d-flex mb-3">
                     <p class="text-dark font-weight-medium mb-0 mr-3">Sizes:</p>
                     <form>
                         <div>
-                            <label class="active" for="size-1">@Model.Size</label>
+                            <label class="active" for="size-1">@Model.Products.FirstOrDefault()?.Size</label>
                         </div>
                     </form>
                 </div>
@@ -40,29 +44,49 @@
                     <p class="text-dark font-weight-medium mb-0 mr-3">Color:    </p>
                     <form>
                         <div>
-                            <label class="active" for="color-1">@ViewBag.Color</label>
+                            <label class="active" for="color-1">@Model.Colors.FirstOrDefault()?.ColorName</label>
                         </div>
                     </form>
                 </div>
                 <div class="d-flex align-items-center mb-4 pt-2">
-                    <div class="input-group quantity mr-3" style="width: 130px;">
-                        <div class="input-group-btn">
-                            <button class="btn btn-primary btn-minus">
-                                <i class="fa fa-minus"></i>
-                            </button>
+
+                        <div class="input-group quantity mr-3" style="width:130px">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-primary btn-minus">-</button>
+                            </div>
+
+                            <input type="text" class="form-control bg-secondary text-center" id="Toplam" value="1" />
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-primary btn-plus">+</button>
+                            </div>
                         </div>
-                        <input type="text" class="form-control bg-secondary text-center" value="1">
-                        <div class="input-group-btn">
-                            <button class="btn btn-primary btn-plus">
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>  
-                    </div>
+
                     @if (ViewBag.IsOnline != null)
                     {
-                        <button class="btn btn-primary px-3" onclick="location.href='/Home/ShoppingCart/@(Model.Id)'">
-                            <i class="fa fa-shopping-cart mr-1"></i> Add To Cart
+
+                        <button class="btn btn-primary px-3" onclick="location.href='/Home/ShoppingCart/@Model.Products.FirstOrDefault()?.Id/'+document.getElementById('Toplam').value;">
+                            Add To Cart
                         </button>
+
+
+                        <script>
+                            (function(){
+                                var container = document.getElementById('quantity-@Model.Products.FirstOrDefault()?.Id');
+                                var input = container.querySelector('input');
+                                var plus = container.querySelector('.btn-plus');
+                                var minus = container.querySelector('.btn-minus');
+
+                                plus.onclick = function() {
+                                    input.value = (parseInt(input.value || '1') + 1).toString();
+                                };
+
+                                minus.onclick = function() {
+                                    input.value = Math.max(1, parseInt(input.value || '1') - 1).toString();
+                                };
+                            })();
+                        </script>
+
                     }
                     else
                     {
@@ -100,7 +124,7 @@
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="tab-pane-1">
                     <h4 class="mb-3">Product Description</h4>
-                    <p>@Model.Description</p>
+                    <p>@Model.Products.FirstOrDefault()?.Description</p>
                 </div>
                 <div class="tab-pane fade" id="tab-pane-2">
                     <h4 class="mb-3">Additional Information</h4>
