@@ -1,5 +1,1 @@
-﻿# Güncelleme (02/09/2025)
-- ShopDetail sayfasından gelen sepete ürün eklerkenki belirtilen ürün miktarı sepette gözükür hale geldi onunla beraber eğer sepette olan bir  ürünü sepete tekrar eklersek sepette ayrı bir slot oluşturmak yerine aynı ürünün sayısını arttırıyor . 
-
-
 
