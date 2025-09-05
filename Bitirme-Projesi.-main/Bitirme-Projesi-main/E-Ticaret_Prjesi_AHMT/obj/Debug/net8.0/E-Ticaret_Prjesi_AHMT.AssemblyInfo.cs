@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("E-Ticaret_Prjesi_AHMT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a985fb00d35af94fd85b5b0fcb9fa00d1b70085e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74cc55e8cd16215d4a8dfad461891fc0fb011fea")]
 [assembly: System.Reflection.AssemblyProductAttribute("E-Ticaret_Prjesi_AHMT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E-Ticaret_Prjesi_AHMT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

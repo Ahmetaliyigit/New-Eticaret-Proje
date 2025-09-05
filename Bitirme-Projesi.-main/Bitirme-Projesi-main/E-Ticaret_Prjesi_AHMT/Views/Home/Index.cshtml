@@ -2,6 +2,14 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var message = TempData["OrderSuccessMessage"] as string;
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-success">
+        @message
+    </div>
 }
 
 <!-- Links Start -->
@@ -24,15 +32,4 @@
     @await Component.InvokeAsync("SelectTop4ProductViewComponentPartial")
 <!-- Products End -->
 
-<!-- Subscribe Start -->
-    @await Component.InvokeAsync("SelectSendGmailViewComponentPArtial");
-<!-- Subscribe End -->
-
-<!-- Products Start -->
-    @await Component.InvokeAsync("SelectNewProduct")
-<!-- Products End -->
-
-<!-- Vendor Start -->
-    @await Component.InvokeAsync("SelectSponsorsViewComponentPartial");   
-<!-- Vendor End -->
 

@@ -2,7 +2,7 @@
 
 <div id="login-page" class="auth-container">
     <div class="auth-box">
-        <h2 class="auth-title">Giriş Yap</h2>
+        <h2 class="auth-title">Login</h2>
         <form asp-action="Login" method="post" asp-controller="Account" method="post">
             <div class="form-group">
                 <label asp-for="Email"></label>
@@ -14,10 +14,10 @@
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn">Giriş Yap</button>
+            <button type="submit" class="btn">Login</button>
         </form>
         <div class="auth-footer">
-            <p>Hesabınız yok mu? <a href="#" onclick="showRegister()">Kayıt Ol</a></p>
+            <p> Do you have a acount? <a href="#" onclick="showRegister()">Register</a></p>
         </div>
     </div>
 </div>

@@ -11,22 +11,21 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
     public class HomeController : Controller
     {
         private readonly IProductService productservise;
+        private readonly IOrderService orderservice;
+        private readonly ICartService cartService;
 
-
-       
-
-        public HomeController(IProductService product)
+        public HomeController(IProductService product, IOrderService color)
         {
             productservise = product;
-          
+            orderservice = color;
         }
 
         public async Task<IActionResult> Index()
-        {             
+        {
             return View();
         }
 
-        public async Task<IActionResult> Shop(int Id) 
+        public async Task<IActionResult> Shop(int Id)
         {
             ViewBag.Id = Id;
             return View(await productservise.GetAllAsync());
@@ -39,7 +38,7 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
         }
 
         [Route("Home/[action]/{id}/{Toplam?}")]
-        public async Task<IActionResult> ShoppingCart(int id,string Toplam)
+        public async Task<IActionResult> ShoppingCart(int id, string Toplam)
         {
             ViewBag.Id = id;
             ViewBag.Toplamtutar = 0;
@@ -63,9 +62,38 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LoginRegister(string loginpassword,string loginemail)
+        public async Task<IActionResult> LoginRegister(string loginpassword, string loginemail)
         {
             return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PlaceOrder(Order order)
+        {
+
+            var user = Program.OnlineUser;
+
+            order.UserNo = user.Id.ToString();
+            var productIds = user.Cart.CartProducts.Select(cp => cp.Product.Id).ToList();
+
+            ModelState.Remove(nameof(order.Products));  // DB den gelmedikleri için çýkarýyoruz
+            ModelState.Remove(nameof(order.UserNo));
+
+            if (!ModelState.IsValid)
+            {
+                ViewBag.ToplamTutar = user.Cart.CartProducts.Sum(cp => cp.Product.Price * cp.ProductCount);
+                return View("Checkout");
+            }
+
+          
+            await orderservice.AddOrderWithProductsAsync(order, productIds);   // Bu metod Attack kullanýyor . (Attack EF e bu product larý Insert etme bunlarý iliþkilendir diyor)
+
+            await cartService.DeleteAsync(user.Cart);
+
+            TempData["OrderSuccessMessage"] = "Sipariþiniz baþarýyla oluþturuldu!";
+
+            return RedirectToAction("Index", "Home");
+
         }
     }
 }

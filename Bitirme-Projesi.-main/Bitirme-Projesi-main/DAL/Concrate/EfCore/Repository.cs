@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL.EfCore
 {
-    public class Repository<T>
+    public class Repository<T> 
     where T : class
     {
         private readonly DataContext context;
@@ -29,7 +29,6 @@ namespace DAL.EfCore
 
             return await context.Set<T>().ToListAsync();
         }
-
         public async Task<T> GetOneAsync(Expression<Func<T, bool>> filter = null)
         {
             if (filter != null)
@@ -39,7 +38,6 @@ namespace DAL.EfCore
 
             return null;
         }
-
         public async Task CreateAsync(T category)
         {
             await context.Set<T>().AddAsync(category);
@@ -58,12 +56,10 @@ namespace DAL.EfCore
         {
             await context.SaveChangesAsync();
         }
-
         public async Task UpdateAsync(T entity)
         {
             context.Update(entity);
         }
-
         public async Task DeleteByIdAsync(int Id)
         {
             var product = await context.Set<T>().FindAsync(Id);

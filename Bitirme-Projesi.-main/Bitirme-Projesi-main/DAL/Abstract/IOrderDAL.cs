@@ -1,0 +1,15 @@
+﻿using Entity;
+using Entity.Reposteries;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL.Abstract
+{
+    public interface IOrderDAL : IRepository<Order>
+    {
+        Task AddOrderWithProductsAsync(Order order, List<int> productIds);
+    }
+}

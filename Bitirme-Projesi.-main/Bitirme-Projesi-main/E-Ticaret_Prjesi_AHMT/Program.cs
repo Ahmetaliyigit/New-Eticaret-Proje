@@ -35,6 +35,7 @@ namespace E_Ticaret_Prjesi_AHMT
                 .AddDefaultTokenProviders();
 
 
+            builder.Services.AddScoped<IOrderDAL, OrderDAL>();
             builder.Services.AddScoped<ICartDAL, CartDAL>();
             builder.Services.AddScoped<ICategoryDAL,CategoryDAL>();
             builder.Services.AddScoped<IColorDAL,ColorDAL>();
@@ -42,6 +43,7 @@ namespace E_Ticaret_Prjesi_AHMT
             builder.Services.AddScoped<IGenderDAL,GenderDAL>();
             builder.Services.AddScoped<ICountryDAL,CountryDAL> ();
 
+            builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<ICartService, CartService>();
             builder.Services.AddScoped<ICategoryService,CategoryService>();
             builder.Services.AddScoped<IColorService,ColorService>();

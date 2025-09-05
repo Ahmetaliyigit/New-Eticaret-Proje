@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿    using Microsoft.AspNetCore.Mvc;
 
 namespace E_Ticaret_Prjesi_AHMT.ViewComponents.Checkout
 {

@@ -46,7 +46,7 @@ namespace BLL.Service
         }
 
         public async Task<Product> GetByIdAsync(int Id)
-        {
+            {
             return await dal.GetByIdAsync(Id);
         }
 

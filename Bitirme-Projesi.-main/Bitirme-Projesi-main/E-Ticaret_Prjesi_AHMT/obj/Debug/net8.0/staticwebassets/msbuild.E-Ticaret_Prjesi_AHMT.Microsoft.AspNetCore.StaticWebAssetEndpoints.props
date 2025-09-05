@@ -1876,13 +1876,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\E-Ticaret_Prjesi_AHMT.rpsxs2urin.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-n5MtnR4CIvoKzu4lzeo0RzAOjDTjhj3SEZzz\u002BemqODM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022n5MtnR4CIvoKzu4lzeo0RzAOjDTjhj3SEZzz\u002BemqODM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Sep 2025 11:59:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022n5MtnR4CIvoKzu4lzeo0RzAOjDTjhj3SEZzz\u002BemqODM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 05 Sep 2025 20:02:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/E-Ticaret_Prjesi_AHMT/E-Ticaret_Prjesi_AHMT.rpsxs2urin.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\E-Ticaret_Prjesi_AHMT.rpsxs2urin.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rpsxs2urin"},{"Name":"integrity","Value":"sha256-n5MtnR4CIvoKzu4lzeo0RzAOjDTjhj3SEZzz\u002BemqODM="},{"Name":"label","Value":"_content/E-Ticaret_Prjesi_AHMT/E-Ticaret_Prjesi_AHMT.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022n5MtnR4CIvoKzu4lzeo0RzAOjDTjhj3SEZzz\u002BemqODM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 02 Sep 2025 11:59:26 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1139"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022n5MtnR4CIvoKzu4lzeo0RzAOjDTjhj3SEZzz\u002BemqODM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 05 Sep 2025 20:02:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/E-Ticaret_Prjesi_AHMT/html/.eslintrc.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\.eslintrc.json'))</AssetFile>

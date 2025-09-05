@@ -46,9 +46,9 @@ namespace DAL.Concrate.EfCore.Context
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Cart> Carts { get; set; }
-
         public DbSet<CartProduct> CartProducts { get; set; }
-             
+        public DbSet<Order> Orders { get; set; }
+
 
 
     }
