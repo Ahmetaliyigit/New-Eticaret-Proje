@@ -10,6 +10,6 @@ namespace BLL.Abstract
 {
     public interface IOrderService : IRepository<Order>
     {
-        Task AddOrderWithProductsAsync(Order order, List<int> productIds);
+
     }
 }

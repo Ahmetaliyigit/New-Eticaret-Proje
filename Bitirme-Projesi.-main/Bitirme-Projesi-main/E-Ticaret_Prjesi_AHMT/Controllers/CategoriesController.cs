@@ -100,53 +100,75 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
             public async Task<IActionResult> Edit(IFormFile Foto,int id, [Bind("Id,CategoryName,Url")] Category category)
             {
 
-                if (id != category.Id)
+            if (id != category.Id) return NotFound();
+
+            // Mevcut category'yi DB'den çekiyoruz (tracked entity)
+            var existingCategory = await service.GetByIdAsync(id);
+            if (existingCategory == null) return NotFound();
+
+            // Fotoğraf varsa yükle, yoksa eski URL'yi koru
+            if (Foto != null && Foto.Length > 0)
+            {
+                existingCategory.Url = await ImageOperations.UploadImageAsync(Foto);
+            }
+            else
+            {
+                existingCategory.Url = existingCategory.Url;
+
+                // Foto alanındaki validation hatasını temizle
+                ModelState.Remove("Foto");
+            }
+
+            // Alanları güncelle (tracked entity)
+            existingCategory.CategoryName = category.CategoryName;
+
+            // Url alanı için ModelState hatasını temizle
+            ModelState.Remove("Url");
+
+            if (!ModelState.IsValid)
+            {
+                // Hataları loglamak / görmek için
+                var errors = ModelState
+                    .Where(kvp => kvp.Value.Errors.Any())
+                    .Select(kvp => new
+                    {
+                        Key = kvp.Key,
+                        Errors = kvp.Value.Errors
+                            .Select(e => string.IsNullOrEmpty(e.ErrorMessage) ? e.Exception?.Message : e.ErrorMessage)
+                            .ToArray()
+                    }).ToList();
+
+                // Konsola yazdır (istersen View'a da gönderebilirsin)
+                foreach (var err in errors)
+                {
+                    foreach (var msg in err.Errors)
+                    {
+                        Console.WriteLine($"Field: {err.Key}, Error: {msg}");
+                    }
+                }
+
+                return View(existingCategory);
+            }
+
+            try
+            {
+                await service.UpdateAsync(existingCategory);
+                await service.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CategoryExists(existingCategory.Id))
                 {
                     return NotFound();
                 }
-
-
-                if (Foto != null && Foto.Length > 0)
+                else
                 {
-                    var uploadedFileName = await ImageOperations.UploadImageAsync(Foto);
-                    category.Url = uploadedFileName;
-
-                ModelState.Remove("Url");
-                 }
-
-                if (ModelState.IsValid)
-                {
-
-           
-
-                    try
-                    {
-                        await service.UpdateAsync(category);
-                        await service.SaveChanges();
-                    }
-                    catch (DbUpdateConcurrencyException)
-                    {
-                        if (!CategoryExists(category.Id))
-                        {
-                            return NotFound();
-                        }
-                        else
-                        {
-                            throw;
-                        }
-                    }
-                    return RedirectToAction(nameof(Index));
+                    throw;
                 }
-
-                var errors = ModelState
-        .Where(kvp => kvp.Value.Errors.Any())
-         .Select(kvp => new {
-             Key = kvp.Key,
-             Errors = kvp.Value.Errors.Select(e => string.IsNullOrEmpty(e.ErrorMessage) ? e.Exception?.Message : e.ErrorMessage).ToArray()
-         }).ToList();
-
-                return View(category);
             }
+
+            return RedirectToAction(nameof(Index));
+        }
 
         // GET: Categories/Delete/5
         public async Task<IActionResult> Delete(int id)

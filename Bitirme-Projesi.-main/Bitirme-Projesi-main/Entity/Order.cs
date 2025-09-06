@@ -12,7 +12,7 @@ namespace Entity
         public int Id { get; set; }
         public string UserNo { get; set; }
 
-        [Required]      // otomatik İngilizce mesaj
+        [Required]     
         public string Mobile { get; set; }
 
         [Required]
@@ -30,6 +30,6 @@ namespace Entity
         [Required]
         public string ZipCode { get; set; }
 
-        public List<Product> Products { get; set; } = new List<Product>();
+        public List<OrderProducts> OrderProducts { get; set; } = new List<OrderProducts>();
     }
 }

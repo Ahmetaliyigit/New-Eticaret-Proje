@@ -144,34 +144,55 @@ namespace E_Ticaret_Prjesi_AHMT.Controllers
         {
             if (id != product.Id) return NotFound();
 
+            // Mevcut ürünü veritabanından al
+            var existingProduct = await service.GetByIdAsync(id);
+            if (existingProduct == null) return NotFound();
 
+            // Fotoğraf varsa yükle, yoksa eski URL'yi koru
             if (Photo != null && Photo.Length > 0)
             {
                 product.Url = await ImageOperations.UploadImageAsync(Photo);
             }
-    
+            else
+            {
+                product.Url = existingProduct.Url;
+                ModelState.Remove("Photo"); // Fotoğraf hatasını temizle
+            }
 
+            // Navigation property ve diğer zorunlu alan hatalarını temizle
             ModelState.Remove("Category");
             ModelState.Remove("Color");
             ModelState.Remove("Gender");
 
-            if (ModelState.IsValid)
+
+            if (!ModelState.IsValid)
             {
-                await service.UpdateAsync(product);
-                await service.SaveChanges();
-                return RedirectToAction(nameof(Index));
+               
+
+                // SelectListleri tekrar doldur
+                var colors = await Col.GetAllAsync();
+                var categories = await Cat.GetAllAsync();
+                var genders = await Gen.GetAllAsync();
+
+                ViewData["CategoryId"] = new SelectList(categories, "Id", "CategoryName", product.CategoryId);
+                ViewData["ColorId"] = new SelectList(colors, "Id", "ColorName", product.ColorId);
+                ViewData["GenderId"] = new SelectList(genders, "Id", "GenderName", product.GenderId);
+
+                return View(product);
             }
 
-            // SelectListleri tekrar doldur
-            var Pro = await Col.GetAllAsync();
-            var Cato = await Cat.GetAllAsync();
-            var Geno = await Gen.GetAllAsync();
 
-            ViewData["CategoryId"] = new SelectList(Cato, "Id", "CategoryName", product.CategoryId);
-            ViewData["ColorId"] = new SelectList(Pro, "Id", "ColorName", product.ColorId);
-            ViewData["GenderId"] = new SelectList(Geno, "Id", "GenderName", product.GenderId);
+            existingProduct.Name = product.Name;
+            existingProduct.Description = product.Description;
+            existingProduct.Price = product.Price;
+            existingProduct.Stock = product.Stock;
+            existingProduct.ColorId = product.ColorId;
+            existingProduct.CategoryId = product.CategoryId;
+            existingProduct.Size = product.Size;
+            existingProduct.GenderId = product.GenderId;
 
-            return View(product);
+            await service.SaveChanges();
+            return RedirectToAction(nameof(Index));
         }
 
 

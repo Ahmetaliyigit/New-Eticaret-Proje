@@ -10,6 +10,6 @@ namespace DAL.Abstract
 {
     public interface IOrderDAL : IRepository<Order>
     {
-        Task AddOrderWithProductsAsync(Order order, List<int> productIds);
+     
     }
 }

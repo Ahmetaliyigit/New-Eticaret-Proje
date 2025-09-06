@@ -19,30 +19,6 @@ namespace DAL.Concrate.EfCore
             context = datacontext;
         }
 
-        public async Task AddOrderWithProductsAsync(Order order, List<int> productIds)
-        {
-            foreach (var productId in productIds)
-            {
-                // EF zaten takip ediyor mu diye kontrol et
-                var trackedProduct = context.Products.Local.FirstOrDefault(p => p.Id == productId);
-                if (trackedProduct != null)
-                {
-                    // Eğer takip ediliyorsa bunu kullan
-                    order.Products.Add(trackedProduct);
-                }
-                else
-                {
-                    // Eğer takip edilmiyorsa yeni oluştur ve attach et
-                    var product = new Product { Id = productId };
-                    context.Attach(product);
-                    order.Products.Add(product);
-                }
-            }
-
-            // Order'ı ekle ve kaydet
-            context.Orders.Add(order);
-            await context.SaveChangesAsync();
-        }
 
     }
 }

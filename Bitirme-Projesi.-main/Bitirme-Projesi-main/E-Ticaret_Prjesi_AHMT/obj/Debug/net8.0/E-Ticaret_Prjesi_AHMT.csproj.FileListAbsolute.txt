@@ -1211,3 +1211,4 @@ C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Biti
 C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Bitirme-Projesi-main\E-Ticaret_Prjesi_AHMT\obj\Debug\net8.0\E-Ticaret_Prjesi_AHMT.pdb
 C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Bitirme-Projesi-main\E-Ticaret_Prjesi_AHMT\obj\Debug\net8.0\E-Ticaret_Prjesi_AHMT.genruntimeconfig.cache
 C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Bitirme-Projesi-main\E-Ticaret_Prjesi_AHMT\obj\Debug\net8.0\ref\E-Ticaret_Prjesi_AHMT.dll
+C:\Users\EXCALIBUR\source\repos\Bitirme-Projesi.-main\Bitirme-Projesi.-main\Bitirme-Projesi-main\E-Ticaret_Prjesi_AHMT\obj\Debug\net8.0\E-Ticaret_Prjesi_AHMT.MvcApplicationPartsAssemblyInfo.cs

@@ -34,6 +34,7 @@ namespace E_Ticaret_Prjesi_AHMT.ViewComponents.ShoppingCart
                 a.UserId = User.Id;
                 await cartService.CreateAsync(a);
                 Program.OnlineUser.Cart = a;
+                Program.OnlineUser.Cart.CartProducts = a.CartProducts;
                 return View(a);
 
             }                                                                // Eğer Sepet yoksa ve sayfaya ürün eklemeden gelindiyse bi sepet oluşturulur ve boş sepet sayfaya gösterilir

@@ -58,9 +58,5 @@ namespace BLL.Service
             return dal.GetOneAsync(filter);
         }
 
-        public async Task AddOrderWithProductsAsync(Order order, List<int> productIds)
-        {
-            await dal.AddOrderWithProductsAsync(order, productIds);
-        }
     }
 }

@@ -12,5 +12,7 @@ namespace DAL.Abstract
     public interface ICartDAL : IRepository<Cart>
     {
         Task<Cart> GetCartWithProductAsync(Expression<Func<Cart ,bool>> filter = null);
+        Task CreateAsync(Cart cart);
+        Task DeleteAsync(Cart cart);
     }
 }

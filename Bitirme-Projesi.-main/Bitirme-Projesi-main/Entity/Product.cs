@@ -30,8 +30,11 @@ namespace Entity
         public Gender Gender { get; set; }
 
 
-        // For Cart
+        // For Order
+        public List<OrderProducts> OrderProducts { get; set; } = new List<OrderProducts>();
 
+
+        // For Cart
         public List<CartProduct> CartProducts { get; set; } = new List<CartProduct>();
 
     }

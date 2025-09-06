@@ -38,6 +38,10 @@ namespace DAL.Concrate.EfCore.Context
                 .HasOne(cp => cp.Product)
                 .WithMany(p => p.CartProducts)
                 .HasForeignKey(cp => cp.ProductId);
+
+            modelBuilder.Entity<OrderProducts>()
+                .HasKey(op => new { op.OrderId, op.ProductId });
+
         }
 
         public DbSet<Category> Categories { get; set; }
@@ -48,6 +52,7 @@ namespace DAL.Concrate.EfCore.Context
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartProduct> CartProducts { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderProducts> OrderProducts { get; set; }
 
 
 

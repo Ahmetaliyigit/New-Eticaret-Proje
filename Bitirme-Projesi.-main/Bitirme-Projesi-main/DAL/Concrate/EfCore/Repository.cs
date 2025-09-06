@@ -51,7 +51,7 @@ namespace DAL.EfCore
         public async Task<T> GetByIdAsync(int id)
         {
             return await context.Set<T>().FindAsync(id);
-        }
+            }
         public async Task SaveChanges()
         {
             await context.SaveChangesAsync();
